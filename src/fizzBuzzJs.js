@@ -1,3 +1,4 @@
+// [1, 2, ..., 100]
 const input = Array(100).fill(null).map((_, i) => i + 1);
 
 const fizzBuzz = (numbers) => {
@@ -6,7 +7,7 @@ const fizzBuzz = (numbers) => {
     const isMultiple5 = num % 5 == 0
 
     if (!isMultiple3 && !isMultiple5) {
-      return num
+      return `${num}`
     } else if (isMultiple3 && !isMultiple5) {
       return 'Fizz'
     } else if (!isMultiple3 && isMultiple5) {
